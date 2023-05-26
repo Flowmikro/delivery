@@ -3,7 +3,10 @@ from django.db import models
 
 
 class CargoModel(models.Model):
-    # weight, description, zip_code_pick_up, zip_code_delivery будут обязательны к заполнению другие автоматом
+    """
+    weight, description, zip_code_pick_up, zip_code_delivery будут обязательны к заполнению остальное заполниться автоматом
+    """
+
     weight = models.PositiveSmallIntegerField()
     description = models.TextField()
     zip_code_pick_up = models.CharField(max_length=10, default=0)

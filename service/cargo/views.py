@@ -2,6 +2,7 @@ from rest_framework.response import Response
 from rest_framework.views import APIView
 from rest_framework.generics import ListCreateAPIView, RetrieveUpdateDestroyAPIView
 from geopy.distance import geodesic as GD
+
 from .serializers import CargoSerializerList, CargoSerializerUpdate
 from .models import CargoModel
 from truck.models import TruckModel

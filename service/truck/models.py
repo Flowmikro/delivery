@@ -36,7 +36,7 @@ class TruckModel(models.Model):
         letter = random.choice(string.ascii_uppercase)
         return f"{num}{letter}"
 
-    # load_capacity обязателен к заполнению
+    # load_capacity обязателен к заполнению остальное заполниться автоматом
     load_capacity = models.PositiveSmallIntegerField()
 
     sku = models.CharField(max_length=5, unique=True, blank=True)
